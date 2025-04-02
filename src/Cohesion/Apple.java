@@ -28,6 +28,12 @@ public class Apple
         return volume*2;
     }
 
+    void bite()
+    {
+        System.out.println("*CHOMP*");
+        this.volume -= 10;
+    }
+
     @Override
     public String toString()
     {
