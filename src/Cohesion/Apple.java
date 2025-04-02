@@ -41,6 +41,6 @@ public class Apple
                 The volume of this apple is: %.2f
                 The weight of this apple is: %.2f
                 The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""",
-                volume, getWeight(), color.getRed(), color.getGreen(), color.getBlue());
+                this.getVolume(), this.getWeight(), this.color.getRed(), this.color.getGreen(), this.color.getBlue());
     }
 }
