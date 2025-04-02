@@ -25,7 +25,7 @@ public class Apple
 
     double getWeight()
     {
-        return volume*2;
+        return volume * 2; // weight of an apple is twice it's volume and in grams. dont worry about the truthfulness of this conversion, its just an example
     }
 
     void bite()
@@ -40,7 +40,7 @@ public class Apple
         return String.format("""
                 The volume of this apple is: %6.2f cubic centimeters
                 The weight of this apple is: %6.2f grams
-                The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""",
+                The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""", // ANSI rgb colour code to display the colour
                 this.getVolume(), this.getWeight(), this.color.getRed(), this.color.getGreen(), this.color.getBlue());
     }
 }

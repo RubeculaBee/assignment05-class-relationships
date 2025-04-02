@@ -24,7 +24,7 @@ public class Orange
 
     double getWeight()
     {
-        return this.volume * 1.5;
+        return this.volume * 1.5; // weight is in grams and is 1.5 times the volume
     }
 
     double getPeelThickness()
@@ -34,6 +34,7 @@ public class Orange
 
     void peel()
     {
+        // any peel thicker than 1.5 mm is hard to peel
         System.out.printf("Wow that was really %s to peel!\n", this.peelThickness > 1.5 ? "hard" : "easy");
         this.peelThickness = 0;
     }
@@ -41,6 +42,7 @@ public class Orange
     void bite()
     {
         if(this.peelThickness > 0)
+            // cant bite into an orange with the peel on!
             System.out.println("Oof, that was all peel...");
         else
         {
@@ -52,6 +54,7 @@ public class Orange
     @Override
     public String toString()
     {
+        // If there is peel, print the peels thickness. otherwise say the peel is gone
         String peelStatus = this.peelThickness > 0 ? String.format("%6.2f millimeters thick", this.peelThickness) : "gone";
 
         return String.format("""
