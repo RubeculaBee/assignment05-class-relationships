@@ -38,8 +38,8 @@ public class Apple
     public String toString()
     {
         return String.format("""
-                The volume of this apple is: %.2f
-                The weight of this apple is: %.2f
+                The volume of this apple is: %6.2f cubic centimeters
+                The weight of this apple is: %6.2f grams
                 The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""",
                 this.getVolume(), this.getWeight(), this.color.getRed(), this.color.getGreen(), this.color.getBlue());
     }
