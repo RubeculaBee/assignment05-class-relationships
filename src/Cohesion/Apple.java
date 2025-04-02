@@ -48,7 +48,8 @@ public class Apple
         return String.format("""
                 The volume of this apple is: %6.2f cubic centimeters
                 The weight of this apple is: %6.2f grams
-                The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""", // ANSI rgb colour code to display the colour
+                The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m
+                """,                              // ANSI rgb colour code to display the colour
                 this.getVolume(), this.getWeight(), this.color.getRed(), this.color.getGreen(), this.color.getBlue());
     }
 }

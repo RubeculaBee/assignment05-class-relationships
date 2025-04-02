@@ -68,7 +68,8 @@ public class Orange
         return String.format("""
                 The volume of this orange is: %6.2f cubic centimeters
                 The weight of this orange is: %6.2f grams
-                The peel   of this orange is: %s""",
+                The peel   of this orange is: %s
+                """,
                 this.getVolume(), this.getWeight(), peelStatus);
     }
 }
