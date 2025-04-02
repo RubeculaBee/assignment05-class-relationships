@@ -51,6 +51,14 @@ public class Orange
         }
     }
 
+    /*
+    Nonsensical method:
+    void tellTime()
+    {
+        System.out.println("The current time is:" + time)
+    }
+    */
+
     @Override
     public String toString()
     {

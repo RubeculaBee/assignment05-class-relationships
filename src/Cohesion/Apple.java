@@ -34,6 +34,14 @@ public class Apple
         this.volume -= 10;
     }
 
+    /*
+    Nonsensical method:
+    void sayHi()
+    {
+        System.out.println("Hello! I'm an apple!")
+    }
+    */
+
     @Override
     public String toString()
     {
