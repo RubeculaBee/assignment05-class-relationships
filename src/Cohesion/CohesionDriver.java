@@ -6,14 +6,10 @@ public class CohesionDriver
 {
     public static void main(String[] args)
     {
-        Apple myRedApple = new Apple();
-        Apple myGreenApple = new Apple(50, Color.green);
+        Orange thinOrange = new Orange();
+        Orange thickOrange = new Orange(120, 2);
+        Orange goneOrange = new Orange(60, 0);
 
-        System.out.println("Here's an example of the no-arg Apple constructor:\n" + myRedApple);
-        System.out.println("Here's an example of the two-arg Apple constructor:\n" + myGreenApple);
-
-        myGreenApple.bite();
-
-        System.out.println(myGreenApple);
+        System.out.printf("First Orange:\n%s\nSecond Orange:\n%s\nThird Orange:\n%s\n", thinOrange, thickOrange, goneOrange);
     }
 }
