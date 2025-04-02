@@ -1,5 +1,3 @@
-package Consistency;
-
 public class Circle
 {
     private double radius; //store the radius in units
