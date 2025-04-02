@@ -4,6 +4,10 @@ public class Orange
 {
     private double volume;        // volume of the orange in cubic centimeters
     private double peelThickness; // thickness of the orange peel in millimeters
+    /*
+    nonsensical data field
+    private int time;
+    */
 
     Orange()
     {

@@ -5,6 +5,10 @@ public class Apple
 {
     private double volume; // size of the apple in cubic centimeters
     private Color color;   // the color of the apples skin
+    /*
+    Nonsensical Data-Field
+    private int numLegs
+    */
 
     Apple()
     {
