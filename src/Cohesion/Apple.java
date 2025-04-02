@@ -34,7 +34,7 @@ public class Apple
         return String.format("""
                 The volume of this apple is: %.2f
                 The weight of this apple is: %.2f
-                The colour of this apple is: \033[38;2;%d;%d;%dm%s\033[0m
-                """, volume, getWeight(), color.getRed(), color.getGreen(), color.getBlue(), color.toString());
+                The colour of this apple is: \033[38;2;%d;%d;%dm■■■■■■\033[0m""",
+                volume, getWeight(), color.getRed(), color.getGreen(), color.getBlue());
     }
 }
