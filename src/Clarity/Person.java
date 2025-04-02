@@ -29,6 +29,12 @@ public class Person
     int getWeight(){return weight;}
     void setWeight(int weight){this.weight = weight;}
 
+    // data derived from other data fields.
+    double getBMI()
+    {
+        return ((double)weight / (height * height));
+    }
+
     void greet()
     {
         System.out.printf("Hi, my name is %s, I am %d years old.\n", this.getName(), this.getAge());
