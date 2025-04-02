@@ -32,6 +32,23 @@ public class Orange
         return this.peelThickness;
     }
 
+    void peel()
+    {
+        System.out.printf("Wow that was really %s to peel!\n", this.peelThickness > 1.5 ? "hard" : "easy");
+        this.peelThickness = 0;
+    }
+
+    void bite()
+    {
+        if(this.peelThickness > 0)
+            System.out.println("Oof, that was all peel...");
+        else
+        {
+            System.out.println("*CHOMP*");
+            this.volume -= 20;
+        }
+    }
+
     @Override
     public String toString()
     {
