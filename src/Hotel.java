@@ -3,23 +3,15 @@ import java.util.ArrayList;
 public class Hotel
 {
     private String name;
-    private ArrayList<Room> rooms;
-    private ArrayList<Guest> guests;
-    private ArrayList<Staff> staff;
+    private ArrayList<Room> rooms = new ArrayList<>();
+    private ArrayList<Guest> guests = new ArrayList<>();
+    private ArrayList<Staff> staff = new ArrayList<>();
 
-    public Hotel()
-    {
-        rooms = new ArrayList<>();
-        guests = new ArrayList<>();
-        staff = new ArrayList<>();
-    }
+    public Hotel() {}
 
     public Hotel(String name)
     {
         this.name = name;
-        rooms = new ArrayList<>();
-        guests = new ArrayList<>();
-        staff = new ArrayList<>();
     }
 
     public String getName()
