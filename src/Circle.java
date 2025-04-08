@@ -1,5 +1,3 @@
-package PART_A;
-
 public class Circle
 {
     private double radius; //store the radius in units
