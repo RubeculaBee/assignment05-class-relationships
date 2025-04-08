@@ -3,10 +3,7 @@ public class Room
     private int number;
     private Guest[] guests;
 
-    public Room()
-    {
-        this.guests = new Guest[2];
-    }
+    public Room() {}
 
     public Room(int number, int capacity)
     {
