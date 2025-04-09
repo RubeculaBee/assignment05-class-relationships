@@ -25,16 +25,17 @@ public class Room
         return null;
     }
 
-    public void addGuest(Guest newGuest)
+    public boolean addGuest(Guest newGuest)
     {
         for(int i = 0; i < guests.length; i++)
             if(guests[i] == null)
             {
                 guests[i] = newGuest;
-                return;
+                return true;
             }
 
         System.out.println("Sorry, this room is full!");
+        return false;
     }
 
     @Override
