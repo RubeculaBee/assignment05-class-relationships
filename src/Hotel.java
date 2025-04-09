@@ -52,9 +52,40 @@ public class Hotel
         this.staff.add(staff);
     }
 
+    public void welcome()
+    {
+        System.out.printf("Welcome to the %s Hotel! We have %d staff member(s) serving %d guests in %d rooms", name, staff.size(), guests.size(), rooms.size());
+    }
+
     @Override
     public String toString()
     {
-        return String.format("Welcome to the %s Hotel! We have %d staff member(s) serving %d guests in %d rooms", name, staff.size(), guests.size(), rooms.size());
+        String output = String.format("Hotel Name: %s\n", name);
+
+        output += "Staff List:\n";
+        for (Staff s : staff)
+        {
+            output += "----------\n";
+            output += s + "\n";
+        }
+        output += "==========\n";
+
+        output += "Guest List:\n";
+        for (Guest g : guests)
+        {
+            output += "----------\n";
+            output += g + "\n";
+        }
+        output += "==========\n";
+
+        output += "Room List:\n";
+        for (Room r : rooms)
+        {
+            output += "----------\n";
+            output += r + "\n";
+        }
+        output += "==========";
+
+        return output;
     }
 }
