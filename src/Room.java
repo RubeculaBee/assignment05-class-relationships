@@ -36,4 +36,18 @@ public class Room
 
         System.out.println("Sorry, this room is full!");
     }
+
+    @Override
+    public String toString()
+    {
+        String output = String.format("Room Number: %d\nCapacity: %d\nGuest List:\n", number, guests.length);
+        for (Guest g : guests)
+            if (g != null)
+            {
+                output += "----------";
+                output += g + "\n";
+            }
+        output += "----------";
+        return output;
+    }
 }
