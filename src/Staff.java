@@ -28,6 +28,11 @@ public class Staff
         return daysWorked;
     }
 
+    public void setWage(double wage)
+    {
+        this.wage = wage;
+    }
+
     public void greet()
     {
         System.out.printf("Hello, my name is %s. I have worked here for %d days.\n", name, daysWorked);
