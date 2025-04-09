@@ -35,8 +35,10 @@ public class Staff
 
     public void work()
     {
+        int hours = (int)(Math.random() * 5) + 5;
+
         daysWorked++;
-        money += wage;
+        money += wage * hours;
     }
 
     @Override
