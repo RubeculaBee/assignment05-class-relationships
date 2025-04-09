@@ -54,7 +54,7 @@ public class Hotel
 
     public void welcome()
     {
-        System.out.printf("Welcome to the %s Hotel! We have %d staff member(s) serving %d guests in %d rooms", name, staff.size(), guests.size(), rooms.size());
+        System.out.printf("Welcome to the %s Hotel! We have %d staff member(s) serving %d guests in %d rooms\n", name, staff.size(), guests.size(), rooms.size());
     }
 
     public void passDay()
