@@ -27,10 +27,10 @@ public class Room
 
     public void addGuest(Guest newGuest)
     {
-        for(Guest g : guests)
-            if(g == null)
+        for(int i = 0; i < guests.length; i++)
+            if(guests[i] == null)
             {
-                g = newGuest;
+                guests[i] = newGuest;
                 return;
             }
 
