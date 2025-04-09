@@ -24,14 +24,32 @@ public class Hotel
         return rooms.get(index);
     }
 
+    public void addRoom(int capacity)
+    {
+        rooms.add(new Room(rooms.size()+1, capacity));
+    }
+
     public Guest getGuest(int index)
     {
         return guests.get(index);
     }
 
+    public void addGuest(Guest guest, int roomNumber)
+    {
+        guests.add(guest);
+
+        if(!rooms.get(roomNumber).addGuest(guest))
+            guests.remove(guest);
+    }
+
     public Staff getStaff(int index)
     {
         return staff.get(index);
+    }
+
+    public void addStaff(Staff staff)
+    {
+        this.staff.add(staff);
     }
 
     @Override
