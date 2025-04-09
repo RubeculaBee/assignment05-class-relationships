@@ -2,9 +2,38 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 {
     public static void main(String[] args)
     {
-        staffTest();
+        hotelTest();
+        //staffTest();
         //guestTest();
         //roomTest();
+    }
+
+    static void hotelTest()
+    {
+        Hotel myHotel = new Hotel("SF");
+
+        for(int i = 0; i < 3; i++)
+            myHotel.addRoom(1+i);
+
+        for(int i = 0; i < 6; i++)
+            myHotel.addStaff(new Staff("S" + "y".repeat(i+1) + "dney", 16.5 - i));
+
+        myHotel.addGuest(new Guest("Johny",2), 1);
+        myHotel.addGuest(new Guest("Mary",14), 2);
+        myHotel.addGuest(new Guest("Susan",14), 2);
+        myHotel.addGuest(new Guest("Chris",4), 3);
+        myHotel.addGuest(new Guest("Trisha",6), 3);
+        myHotel.addGuest(new Guest("Barry",6), 3);
+
+        myHotel.welcome();
+
+        System.out.println(myHotel);
+
+        myHotel.passDay();
+        myHotel.passDay();
+        myHotel.passDay();
+
+        System.out.println(myHotel);
     }
 
     static void staffTest()
