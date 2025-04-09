@@ -42,6 +42,6 @@ public class Staff
     @Override
     public String toString()
     {
-        return String.format("This Worker:\nName: %s\nWage: %f\nDollars Earned: %f\n Days Worked: %d", name, wage, money, daysWorked);
+        return String.format("Staff name: %s\nWage: %f\nDollars Earned: %f\n Days Worked: %d", name, wage, money, daysWorked);
     }
 }
