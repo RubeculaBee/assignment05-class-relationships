@@ -18,9 +18,10 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
         System.out.println(guest);
 
         System.out.println("... Passing Days   ...");
+        guest.stay();
+        guest.stay();
+
         System.out.println("...   Stay test    ...");
-        guest.stay();
-        guest.stay();
         guest.greet();
         System.out.println(guest);
     }
