@@ -13,7 +13,7 @@ public class Guest
 
     public void greet()
     {
-        System.out.printf("Hey there! I'm a guest here, and my name is %s. I'll be staying here another %d day(s).", name, durationOfStay);
+        System.out.printf("Hey there! I'm a guest here, and my name is %s. I'll be staying here another %d day(s).\n", name, durationOfStay);
     }
 
     public void stay()
