@@ -38,7 +38,7 @@ public class Hotel
     {
         guests.add(guest);
 
-        if(!rooms.get(roomNumber).addGuest(guest))
+        if(!rooms.get(roomNumber - 1).addGuest(guest))
             guests.remove(guest);
     }
 
