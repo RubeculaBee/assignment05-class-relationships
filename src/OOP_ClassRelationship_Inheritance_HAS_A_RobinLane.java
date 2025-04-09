@@ -2,8 +2,29 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 {
     public static void main(String[] args)
     {
-        guestTest();
+        staffTest();
+        //guestTest();
         //roomTest();
+    }
+
+    static void staffTest()
+    {
+        System.out.println("... Creating staff ...");
+        Staff staff = new Staff("Sara", 16.50);
+
+        System.out.println("...   Greet Test   ...");
+        staff.greet();
+
+        System.out.println("... toString test  ...");
+        System.out.println(staff);
+
+        System.out.println("...    Working     ...");
+        staff.work();
+        staff.work();
+
+        System.out.println("...   Work Test    ...");
+        staff.greet();
+        System.out.println(staff);
     }
 
     static void guestTest()
