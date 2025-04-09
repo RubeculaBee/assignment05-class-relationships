@@ -11,6 +11,16 @@ public class Guest
         this.durationOfStay = durationOfStay;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getDurationOfStay()
+    {
+        return durationOfStay;
+    }
+
     public void greet()
     {
         System.out.printf("Hey there! I'm %s, and I'm a guest here. I'll be here another %d day(s).\n", name, durationOfStay);
