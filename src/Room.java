@@ -44,7 +44,7 @@ public class Room
         for (Guest g : guests)
             if (g != null)
             {
-                output += "----------";
+                output += "----------\n";
                 output += g + "\n";
             }
         output += "----------";
