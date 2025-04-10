@@ -1,6 +1,7 @@
 public class Room
 {
     private int number;
+    private int capacity;
     private Guest[] guests;
 
     public Room() {}
@@ -8,12 +9,18 @@ public class Room
     public Room(int number, int capacity)
     {
         this.number = number;
-        this.guests = new Guest[capacity];
+        this.capacity = capacity;
+        this.guests = new Guest[this.capacity];
     }
 
     public int getNumber()
     {
         return number;
+    }
+
+    public int getCapacity()
+    {
+        return capacity;
     }
 
     public Guest getGuest(int index)
