@@ -42,6 +42,22 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 
         System.out.println("... passDay test ...");
         System.out.println(myHotel);
+
+        System.out.println("... Passing 3 days ...");
+        myHotel.passDay();
+        myHotel.passDay();
+        myHotel.passDay();
+
+        System.out.println("... passDay test ...");
+        System.out.println(myHotel);
+
+        System.out.println("... Passing 3 days ...");
+        myHotel.passDay();
+        myHotel.passDay();
+        myHotel.passDay();
+
+        System.out.println("... passDay test ...");
+        System.out.println(myHotel);
     }
 
     static void staffTest()
