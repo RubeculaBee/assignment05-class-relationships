@@ -10,14 +10,18 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 
     static void hotelTest()
     {
+        System.out.println("... Creating Hotel ...");
         Hotel myHotel = new Hotel("SF");
 
+        System.out.println("... Creating Rooms ...");
         for(int i = 0; i < 3; i++)
             myHotel.addRoom(1+i);
 
+        System.out.println("... Creating Staff ...");
         for(int i = 0; i < 6; i++)
             myHotel.addStaff(new Staff("S" + "y".repeat(i+1) + "dney", 16.5 - i));
 
+        System.out.println("... Creating Guests ...");
         myHotel.addGuest(new Guest("Johny",2), 1);
         myHotel.addGuest(new Guest("Mary",14), 2);
         myHotel.addGuest(new Guest("Susan",14), 2);
@@ -25,14 +29,18 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
         myHotel.addGuest(new Guest("Trisha",6), 3);
         myHotel.addGuest(new Guest("Barry",6), 3);
 
+        System.out.println("... Welcome Test ...");
         myHotel.welcome();
 
+        System.out.println("... toString Test ...");
         System.out.println(myHotel);
 
+        System.out.println("... Passing 3 days ...");
         myHotel.passDay();
         myHotel.passDay();
         myHotel.passDay();
 
+        System.out.println("... passDay test ...");
         System.out.println(myHotel);
     }
 
