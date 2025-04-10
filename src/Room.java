@@ -45,6 +45,13 @@ public class Room
         return false;
     }
 
+    public void removeGuest(Guest guest)
+    {
+        for(int i = 0; i < guests.length; i++)
+            if(this.guests[i] == guest)
+                this.guests[i] = null;
+    }
+
     @Override
     public String toString()
     {
