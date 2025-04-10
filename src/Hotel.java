@@ -62,8 +62,18 @@ public class Hotel
         for(Staff s : staff)
             s.work();
 
-        for(Guest g : guests)
-            g.stay();
+        for(Room r : rooms)
+            for(int i = 0; i < r.getCapacity(); i++)
+            {
+                Guest g = r.getGuest(i);
+                g.stay();
+
+                if(g.getDurationOfStay() <= 0)
+                {
+                    r.removeGuest(g);
+                    this.guests.remove(g);
+                }
+            }
     }
 
     @Override
