@@ -25,9 +25,9 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
         myHotel.addGuest(new Guest("Johny",2), 1);
         myHotel.addGuest(new Guest("Mary",14), 2);
         myHotel.addGuest(new Guest("Susan",14), 2);
-        myHotel.addGuest(new Guest("Chris",4), 3);
-        myHotel.addGuest(new Guest("Trisha",6), 3);
-        myHotel.addGuest(new Guest("Barry",6), 3);
+        myHotel.addGuest(new Guest("Chris",5), 3);
+        myHotel.addGuest(new Guest("Trisha",7), 3);
+        myHotel.addGuest(new Guest("Barry",7), 3);
 
         System.out.println("... Welcome Test ...");
         myHotel.welcome();
