@@ -66,12 +66,14 @@ public class Hotel
             for(int i = 0; i < r.getCapacity(); i++)
             {
                 Guest g = r.getGuest(i);
-                g.stay();
-
-                if(g.getDurationOfStay() <= 0)
+                if(g != null)
                 {
-                    r.removeGuest(g);
-                    this.guests.remove(g);
+                    g.stay();
+                    if (g.getDurationOfStay() <= 0)
+                    {
+                        r.removeGuest(g);
+                        this.guests.remove(g);
+                    }
                 }
             }
     }
