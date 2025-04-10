@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class Hotel
 {
-    private String name;
-    private ArrayList<Room> rooms = new ArrayList<>();
-    private ArrayList<Guest> guests = new ArrayList<>();
-    private ArrayList<Staff> staff = new ArrayList<>();
+    private String name;                                 // Name of the hotel
+    private ArrayList<Room> rooms = new ArrayList<>();   // Rooms that exist in this hotel
+    private ArrayList<Guest> guests = new ArrayList<>(); // Guests that are staying at this hotel
+    private ArrayList<Staff> staff = new ArrayList<>();  // Staff that work at this hotel
 
     public Hotel() {}
 
@@ -26,6 +26,7 @@ public class Hotel
 
     public void addRoom(int capacity)
     {
+        // Room numbers are assigned to room sequentially
         rooms.add(new Room(rooms.size()+1, capacity));
     }
 
@@ -38,7 +39,9 @@ public class Hotel
     {
         guests.add(guest);
 
+        // if the guest was not successfully added
         if(!rooms.get(roomNumber - 1).addGuest(guest))
+            // remove that guest from the hotel
             guests.remove(guest);
     }
 
@@ -59,18 +62,26 @@ public class Hotel
 
     public void passDay()
     {
+        // each staff works
         for(Staff s : staff)
             s.work();
 
+        // for each room
         for(Room r : rooms)
+            // for each guest spot in that room
+            // (can't use enhanced for loop since room's guest array is private)
             for(int i = 0; i < r.getCapacity(); i++)
             {
                 Guest g = r.getGuest(i);
+                // If the guest exists
                 if(g != null)
                 {
                     g.stay();
+
+                    // If the guests duration has run out
                     if (g.getDurationOfStay() <= 0)
                     {
+                        // guest leaves room and hotel
                         r.removeGuest(g);
                         this.guests.remove(g);
                     }

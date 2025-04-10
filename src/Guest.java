@@ -1,7 +1,7 @@
 public class Guest
 {
-    private String name;
-    private int durationOfStay;
+    private String name;        // Guests name
+    private int durationOfStay; // How long the guest will stay in the hotel in days
 
     public Guest() {}
 

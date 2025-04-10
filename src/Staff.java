@@ -1,9 +1,9 @@
 public class Staff
 {
-    private String name;
-    private double wage;
-    private double money;
-    private int daysWorked;
+    private String name;    // Staff members name
+    private double wage;    // Amount of money this staff member earns in dollars
+    private double money;   // Amount of money this staff has already earned in dollars
+    private int daysWorked; // How many days this staff member has worked at the hotel
 
     public Staff() {}
 
@@ -40,6 +40,7 @@ public class Staff
 
     public void work()
     {
+        // staff member works a random amount of hours between 4 and 9
         int hours = (int)(Math.random() * 5) + 5;
 
         daysWorked++;
