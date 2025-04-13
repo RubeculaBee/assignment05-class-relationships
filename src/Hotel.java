@@ -1,3 +1,17 @@
+/*********************************************************************************
+ *
+ * File: Hotel.java
+ * By: Robin Lane
+ * Date: 04-10-2025
+ *
+ * Description: Represents a hotel. Stores it's name, as well as three array-lists
+ *              that store the rooms, guests, and staff in the hotel. Hotel can
+ *              display a welcome message, as well as pass the day which causes
+ *              each staff member to work, each guest to stay, and guests with
+ *              no duration left are removed.
+ *
+ *********************************************************************************/
+
 import java.util.ArrayList;
 
 public class Hotel

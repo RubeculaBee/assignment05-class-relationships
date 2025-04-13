@@ -1,3 +1,16 @@
+/*********************************************************************************
+ *
+ * File: Room.java
+ * By: Robin Lane
+ * Date: 04-10-2025
+ *
+ * Description: Represents a room in a hotel. Stores the rooms number, how many guests
+ *              can fit in the room, as well as an array of guests that are staying
+ *              in this particular room. Guests can be added and removed, but otherwise
+ *              the guest array cannot be accessed.
+ *
+ *********************************************************************************/
+
 public class Room
 {
     private int number;     // This rooms Room Number

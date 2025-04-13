@@ -1,3 +1,15 @@
+/*********************************************************************************
+ *
+ * File: Guest.java
+ * By: Robin Lane
+ * Date: 04-10-2025
+ *
+ * Description: Represents a guest at the hotel. Stores their name and how long
+ *              they'll stay. Can greet as well as stay (decrementing their remaining
+ *              days at the hotel).
+ *
+ *********************************************************************************/
+
 public class Guest
 {
     private String name;        // Guests name

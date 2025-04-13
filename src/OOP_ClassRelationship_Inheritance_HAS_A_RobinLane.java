@@ -1,3 +1,14 @@
+/*********************************************************************************
+ *
+ * File: OOP_ClassRelationship_Inheritance_HAS_A_RobinLane.java
+ * By: Robin Lane
+ * Date: 04-10-2025
+ *
+ * Description: Driver class that tests each other class (Hotel, Room, Guest, Staff).
+ *              demonstrates the HAS-A relationship between classes.
+ *
+ *********************************************************************************/
+
 public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 {
     public static void main(String[] args)

@@ -1,3 +1,15 @@
+/*********************************************************************************
+ *
+ * File: Staff.java
+ * By: Robin Lane
+ * Date: 04-10-2025
+ *
+ * Description: Represents a Staff member at a hotel. Stores the staff's name,
+ *              wage, money earned, and days worked. staff can greet as well as
+ *              work to earn money.
+ *
+ *********************************************************************************/
+
 public class Staff
 {
     private String name;    // Staff members name
