@@ -1,3 +1,13 @@
+/*********************************************************************************
+ *
+ * File: Circle.java
+ * By: Robin Lane
+ * Date: 04-01-2025
+ *
+ * Description: Simple class to represent a circle stores, changes, and returns it's radius
+ *
+ *********************************************************************************/
+
 public class Circle
 {
     private double radius; //store the radius in units

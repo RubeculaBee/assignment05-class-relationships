@@ -1,3 +1,14 @@
+/*********************************************************************************
+ *
+ * File: ConsistencyDriver.java
+ * By: Robin Lane
+ * Date: 04-01-2025
+ *
+ * Description: Driver to test Circle class.
+ *              Demonstrates the guideline of Consistency.
+ *
+ *********************************************************************************/
+
 public class ConsistencyDriver
 {
     public static void main(String[] args)
