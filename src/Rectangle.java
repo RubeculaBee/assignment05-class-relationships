@@ -49,6 +49,6 @@ public class Rectangle extends Shape
     @Override
     public String toString()
     {
-        return String.format("This Rectangle:\n  Width: %.2f\n  Height: %.2f\n Area: %.2f\n Perimeter: %.2f", width, height, this.getArea(), this.getPerimeter());
+        return String.format("This Rectangle:\n - Width: %.2f\n - Height: %.2f\n - Area: %.2f\n - Perimeter: %.2f", width, height, this.getArea(), this.getPerimeter());
     }
 }
