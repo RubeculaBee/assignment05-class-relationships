@@ -22,7 +22,7 @@ public class Circle extends Shape
     {
         double increase = area / this.getArea();
 
-        setRadius(increase * this.radius);
+        setRadius(Math.sqrt(increase) * this.radius);
     }
 
     @Override
