@@ -3,7 +3,29 @@ public class OOP_ClassRelationship_Inheritance_IS_A_RobinLane
     public static void main(String[] args)
     {
         //rectangleTest();
-        squareTest();
+        //squareTest();
+        circleTest();
+    }
+
+    static  void circleTest()
+    {
+        System.out.println("\n...   Creating Circle (3)  ...");
+        Circle myCircle = new Circle(3);
+
+        System.out.println("\n...      toString Test     ...");
+        System.out.println(myCircle);
+
+        System.out.println("\n...   setRadius Test (6)   ...");
+        myCircle.setRadius(6);
+        System.out.println(myCircle);
+
+        System.out.println("\n...    setArea Test (60)   ...");
+        myCircle.setArea(60);
+        System.out.println(myCircle);
+
+        System.out.println("\n... setPerimeter Test (10) ...");
+        myCircle.setPerimeter(10);
+        System.out.println(myCircle);
     }
 
     static void squareTest()
