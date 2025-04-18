@@ -21,14 +21,14 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
 
     static void hotelTest()
     {
-        System.out.println("... Creating Hotel ...");
+        System.out.println("... Creating Hotel  ...");
         Hotel myHotel = new Hotel("SF");
 
-        System.out.println("... Creating Rooms ...");
+        System.out.println("... Creating Rooms  ...");
         for(int i = 0; i < 3; i++)
             myHotel.addRoom(1+i);
 
-        System.out.println("... Creating Staff ...");
+        System.out.println("... Creating Staff  ...");
         for(int i = 0; i < 6; i++)
             myHotel.addStaff(new Staff("S" + "y".repeat(i+1) + "dney", 16.5 - i));
 
@@ -40,34 +40,34 @@ public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
         myHotel.addGuest(new Guest("Trisha",7), 3);
         myHotel.addGuest(new Guest("Barry",7), 3);
 
-        System.out.println("... Welcome Test ...");
+        System.out.println("...  Welcome Test   ...");
         myHotel.welcome();
 
-        System.out.println("... toString Test ...");
+        System.out.println("...  toString Test  ...");
         System.out.println(myHotel);
 
-        System.out.println("... Passing 3 days ...");
+        System.out.println("... Passing 3 days  ...");
         myHotel.passDay();
         myHotel.passDay();
         myHotel.passDay();
 
-        System.out.println("... passDay test ...");
+        System.out.println("...  passDay test   ...");
         System.out.println(myHotel);
 
-        System.out.println("... Passing 3 days ...");
+        System.out.println("... Passing 3 days  ...");
         myHotel.passDay();
         myHotel.passDay();
         myHotel.passDay();
 
-        System.out.println("... passDay test ...");
+        System.out.println("...  passDay test   ...");
         System.out.println(myHotel);
 
-        System.out.println("... Passing 3 days ...");
+        System.out.println("... Passing 3 days  ...");
         myHotel.passDay();
         myHotel.passDay();
         myHotel.passDay();
 
-        System.out.println("... passDay test ...");
+        System.out.println("...  passDay test   ...");
         System.out.println(myHotel);
     }
 
