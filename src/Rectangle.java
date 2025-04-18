@@ -35,7 +35,7 @@ public class Rectangle extends Shape
     {
         double increase = area / this.getArea();
 
-        setSize(Math.sqrt(this.width * increase), Math.sqrt(this.height * increase));
+        setSize(this.width * Math.sqrt(increase), this.height * Math.sqrt(increase));
     }
 
     @Override
