@@ -4,10 +4,20 @@ public class OOP_ClassRelationship_Inheritance_IS_A_RobinLane
     {
         //rectangleTest();
         //squareTest();
+        //circleTest();
+        shapeTest();
+    }
+
+    static void shapeTest()
+    {
+        rectangleTest();
+        System.out.println("===================================");
+        squareTest();
+        System.out.println("===================================");
         circleTest();
     }
 
-    static  void circleTest()
+    static void circleTest()
     {
         System.out.println("\n...   Creating Circle (3)  ...");
         Circle myCircle = new Circle(3);
