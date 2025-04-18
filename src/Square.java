@@ -15,6 +15,6 @@ public class Square extends Rectangle
     @Override
     public String toString()
     {
-        return String.format("This Rectangle:\n - Side Length: %.2f\n - Area: %.2f\n - Perimeter: %.2f", this.getWidth(), this.getArea(), this.getPerimeter());
+        return String.format("This Square:\n - Side Length: %.2f\n - Area: %.2f\n - Perimeter: %.2f", this.getWidth(), this.getArea(), this.getPerimeter());
     }
 }
