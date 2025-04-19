@@ -1,6 +1,6 @@
 /*********************************************************************************
  *
- * File: OOP_ClassRelationship_Inheritance_HAS_A_RobinLane.java
+ * File: OOP_ClassRelationship_HAS_A_RobinLane.java
  * By: Robin Lane
  * Date: 04-10-2025
  *
@@ -9,7 +9,7 @@
  *
  *********************************************************************************/
 
-public class OOP_ClassRelationship_Inheritance_HAS_A_RobinLane
+public class OOP_ClassRelationship_HAS_A_RobinLane
 {
     public static void main(String[] args)
     {
