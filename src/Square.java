@@ -1,3 +1,15 @@
+/*********************************************************************************
+ *
+ * File: Square.java
+ * By: Robin Lane
+ * Date: 04-18-2025
+ *
+ * Description: Represents a basic Square. A square IS A Rectangle and IS A Shape.
+ *              Width and height are the same. Area and perimeter defined using
+ *              side length
+ *
+ *********************************************************************************/
+
 public class Square extends Rectangle
 {
     public Square() {}

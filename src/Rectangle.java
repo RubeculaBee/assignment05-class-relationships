@@ -1,3 +1,15 @@
+/*********************************************************************************
+ *
+ * File: Rectangle.java
+ * By: Robin Lane
+ * Date: 04-18-2025
+ *
+ * Description: Represents a basic rectangle. A rectangle IS A shape.
+ *              Has a width and height. Area and perimeter defined using
+ *              width and height.
+ *
+ *********************************************************************************/
+
 public class Rectangle extends Shape
 {
     private double width;

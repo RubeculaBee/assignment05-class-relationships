@@ -1,3 +1,14 @@
+/*********************************************************************************
+ *
+ * File: Circle.java
+ * By: Robin Lane
+ * Date: 04-18-2025
+ *
+ * Description: Represents a basic circle. A circle IS A shape. Has a radius.
+ *              Area and perimeter defined using radius and Pi.
+ *
+ *********************************************************************************/
+
 public class Circle extends Shape
 {
     private double radius;
