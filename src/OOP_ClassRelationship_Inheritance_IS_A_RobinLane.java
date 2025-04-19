@@ -10,11 +10,36 @@ public class OOP_ClassRelationship_Inheritance_IS_A_RobinLane
 
     static void shapeTest()
     {
-        rectangleTest();
-        System.out.println("===================================");
-        squareTest();
-        System.out.println("===================================");
-        circleTest();
+        System.out.println("\n...           Creating Circle            ...");
+        Circle myCircle = new Circle(6);
+        System.out.println("\n...          Creating Rectangle          ...");
+        Rectangle myRectangle = new Rectangle(5,10);
+        System.out.println("\n...           Creating Square            ...");
+        Square mySquare = new Square(4);
+
+        System.out.println("\n...   Loading objects into Shape array   ...");
+        Shape[] myShapes = new Shape[3];
+        myShapes[0] = myCircle;
+        myShapes[1] = myRectangle;
+        myShapes[2] = mySquare;
+
+        System.out.println("\n...   Printing shapes from Shape Array   ...");
+        for(Shape shape : myShapes)
+            System.out.println("\n"+shape);
+
+        System.out.println("\n... Loading objects into Rectangle array ...");
+        Rectangle[] myRectangles = new Rectangle[3];
+        for(int i = 0; i < myShapes.length; i++)
+            try{
+                myRectangles[i] = (Rectangle) myShapes[i];
+            }
+            catch(Exception e){
+                System.out.println("\033[31mErr: Attempted to load non-rectangle shape into Rectangle array\033[0m");
+            }
+
+        System.out.println("\n... Printing shapes from Rectangle Array ...");
+        for(Shape shape : myRectangles)
+            System.out.println("\n"+shape);
     }
 
     static void circleTest()
